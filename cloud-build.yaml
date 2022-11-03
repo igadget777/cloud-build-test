@@ -1,0 +1,9 @@
+steps:
+  - name: 'ubuntu:latest'
+    entrypoint: /bin/sh
+    args:
+     - 'c'
+     - |
+       echo "The '|' in yaml starts a muliline string"
+       sudo yum update -y
+       echo "Finished updating"
